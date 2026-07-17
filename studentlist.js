@@ -51,35 +51,25 @@ for (let i=0;i<marks.length;i++)
 }
 return highest;
 }
+let pass=marks.filter(function(x)
+{
+    return x>=40;
+});
+console.log("passed = "+pass);
 
-
-function filtermarks(marks)
- {
-   
-    for (let i = 0; i < marks.length; i++) 
-        {
-        if (marks[i] >= 50)
-             {
-            console.log(marks[i]+" is pass");
-             }
-    }
-
-    for (let i = 0; i < marks.length; i++)
-         {
-        if (marks[i] < 50) 
-            {
-            console.log(marks[i]+" is fail");
-        }
-    }
+let fail=marks.filter(function(y)
+{
+return y<40;
 }
+);
+console.log("failed = "+fail);
 
 removemarks(marks, 20);
-console.log(marks);
+console.log("removed marks = "+marks);
 
 addmarks(marks,40);
-console.log(marks);
-
-filtermarks(marks);
+console.log("added marks = "+marks);
 
 console.log("highest = "+highestmarks(marks));
 console.log("average marks = "+avgmarks(marks));
+
