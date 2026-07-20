@@ -5,6 +5,7 @@ const prompt =require("prompt-sync")();
 //status
 //priority
 let tasks=[ ];
+//empty array we make changes to this array using functions
 
 //function 1
 function addtask(tasks,id,title,stat,priority)
@@ -21,7 +22,7 @@ function addtask(tasks,id,title,stat,priority)
 addtask(tasks,1,"dusting","pending","high");
 addtask(tasks,2,"washing","incomplete","medium");
 addtask(tasks,3,"cleaning","pending","low");
-addtask(tasks,4,"cooking","compelete","medium");
+addtask(tasks,4,"cooking","complete","medium");
 console.log("/DISPLAYING ALL THE ADDED TASKS/");
 console.log(tasks);
 

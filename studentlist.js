@@ -5,12 +5,14 @@ console.log("   students marks list ");
 let marks=[23,54,87,20,94,20,77]; //array for marks
 console.log("marks = "+ marks); //displays marks of students in array
 
-function addmarks(marks,value1) //adding elements function
+function addmarks(marks,val) //adding elements function
 {
-    marks.push(value1);  // .push() allows to add new elements 
+    marks.push(val);  // .push() allows to add new elements 
                            //at the end of array
 }
 
+addmarks(marks,40);
+console.log("added marks = "+marks);
 
 function removemarks(marks, value) 
 {
@@ -24,6 +26,8 @@ function removemarks(marks, value)
     }
 }
 
+removemarks(marks, 20);
+console.log("removed marks = "+marks);
 
 function avgmarks(marks)
 {
@@ -36,7 +40,7 @@ for (let i=0;i<marks.length;i++)
 average=sum/marks.length ;
 return average;
 }
-
+console.log("average marks = "+avgmarks(marks));
 
 function highestmarks(marks)
 {
@@ -51,10 +55,15 @@ for (let i=0;i<marks.length;i++)
 }
 return highest;
 }
+
+
+console.log("highest = "+highestmarks(marks));
+
 let pass=marks.filter(function(x)
 {
     return x>=40;
 });
+
 console.log("passed = "+pass);
 
 let fail=marks.filter(function(y)
@@ -64,12 +73,7 @@ return y<40;
 );
 console.log("failed = "+fail);
 
-removemarks(marks, 20);
-console.log("removed marks = "+marks);
 
-addmarks(marks,40);
-console.log("added marks = "+marks);
 
-console.log("highest = "+highestmarks(marks));
-console.log("average marks = "+avgmarks(marks));
+
 

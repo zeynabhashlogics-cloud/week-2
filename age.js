@@ -1,6 +1,7 @@
 //AGE ELIGIBILITY
 //if else conditions
 const prompt =require("prompt-sync")();
+
 let num =Number(prompt("enter your number = "));
 if (isNaN(num))           //isNaN is a built in function
                         // check if it is not a number
