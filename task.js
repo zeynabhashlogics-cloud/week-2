@@ -1,6 +1,4 @@
 
-const prompt = require("prompt-sync")();
-
 let tasks =  // array containing objects as tasks
 [
     //id
