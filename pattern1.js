@@ -1,11 +1,12 @@
-//pattern using loops
+// printing rigth trinagle star
+for (let i=0;i<5;i++)
+{
+    let r=""; //empty
+    for (let j=1;j<=i;j++)
+    {
+        r =r+" * ";
 
-for (let i=1;i<=4;i++)
-{
-    let ch ="";
-for (let j=1;j<=i;j++)
-{
-    ch=ch+"*";
+    }
+    console.log(r);
 }
-console.log(ch);
-}
+

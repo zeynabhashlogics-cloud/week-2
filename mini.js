@@ -1,4 +1,4 @@
-const prompt =require("prompt-sync")();
+
 //task manager
 //id
 //title
@@ -30,6 +30,7 @@ function tasklist2(tasks)
 {
     console.log("/ INITIAL TASK LIST /");
 }
+// displays all tasks added 
 tasklist2(tasks);
 console.log(tasks);
 
@@ -42,6 +43,7 @@ function updatetask(tasks,key, val, newkey, newval)
         {
             tasks[i][newkey] = newval;
         }
+        //updates tasks if matches value
     }
 }
 console.log("/UPDATING TASKS/");
@@ -56,6 +58,7 @@ function filtertasks(tasks, key, val)
         return task[key] === val ;
     });
 }
+// filters tasks depending on key and value
 let f1 = filtertasks(tasks,"status","pending");
 let f2 = filtertasks(tasks,"priority","medium");
 let f3=filtertasks(tasks,"id",2);
@@ -74,7 +77,7 @@ function deletetask(tasks,key,val)
         {
         tasks.splice(i,1);
     i--;
-        }
+        }  // deletes task using splice
     }
 }
 console.log("/DELETING TASKS/");
@@ -88,5 +91,6 @@ console.log("/ ALL TASKS LEFT /");
 }
 tasklist1(tasks);
 console.log(tasks);
+//prints final tasklist
 
 

@@ -2,7 +2,6 @@
 
 let tasks =[3,4,5,6,8];
 tasks.pop();
-tasks.pop();
 
 //shift removes from beginning of array
 //pop removes from end of array
@@ -70,15 +69,4 @@ let newarr = nums.map(function(x)
 );
 console.log("original array = "+nums);
 console.log("new array = "+newarr);
-
-//map example 2
-let names=["ali","ahmed","sara","hamna"];
-let newnames= names.map(function(n)
-{
-    return "a"+n[1];
-});
-
-console.log("original names = "+names);
-console.log("modified names = "+newnames);
-
 

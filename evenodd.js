@@ -1,16 +1,26 @@
-const prompt =require("prompt-sync")();
-//check if even or odd
-//using if else
-const num =Number(prompt("enter your number = "));
-if (isNaN(num))
+const prompt = require("prompt-sync")();
+
+const input = (prompt("enter = ")); //enter any input
+
+if (input ==="")
+{
+    console.log("no input entered");
+}
+if (isNaN(input))
 {
     console.log("not a number");
 }
-else if (num%2==0)
+let num=Number(input);
+if (num)
+{
+if (num %2 === 0)
 {
     console.log("even");
 }
-else if (num%2!=0)
-{
+else
+    {
     console.log("odd");
 }
+}
+
+

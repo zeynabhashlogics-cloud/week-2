@@ -1,14 +1,12 @@
-let colors=['red','orange','blue','white','black'];
+const names=["ali","ahmed","sara","zahra","hamna"];
 
-for (c of colors)
+for (let name of names)
 {
-    console.log(c);
+    if (name==="sara")
+    {
+        continue;
+    }
+    console.log(name);
 }
+  
 
-for (col of colors)
-{
-    if (col==='white')
-        break;
-    else 
-        console.log(col);
-}

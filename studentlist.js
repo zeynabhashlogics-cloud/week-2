@@ -20,7 +20,7 @@ function removemarks(marks, value)
          {
     if (marks[i] === value) 
             {
-            marks.splice(i, 1);
+            marks.splice(i, 1); //remove marks 
             i--; 
             }
     }
