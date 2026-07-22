@@ -1,32 +1,41 @@
 const prompt =require("prompt-sync")();
-let grade =Number(prompt("enter your marks = "));
+let grade =prompt("enter your marks = ");
 //grade calculator
 //using if else
-if (isNaN(grade))
+    if (grade==="")
+    {
+        console.log("no input");
+    }
+    else
+    {
+        let n=Number(grade);
+
+if (isNaN(n))
 {
     console.log("numbers only");
 }
-else if (grade > 100 || grade < 0)
+
+else if (n > 100 || n < 0)
 {
     console.log("error");
 }
-else if (grade >= 90)
+else if (n >= 90)
 {
     console.log("A");
 }
-else if (grade >= 80)
+else if (n >= 80)
 {
     console.log("B");
 }
-else if (grade >= 70)
+else if (n>= 70)
 {
     console.log("C");
 }
-else if (grade >= 60)
+else if (n>= 60)
 {
     console.log("D");
 }
-else if (grade >= 50)
+else if (n >= 50)
 {
     console.log("E");
 }
@@ -34,3 +43,4 @@ else
 {
     console.log("F");
 }
+    }

@@ -1,22 +1,29 @@
-//AGE ELIGIBILITY
-//if else conditions
-const prompt =require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
-let num =Number(prompt("enter your number = "));
-if (isNaN(num))           //isNaN is a built in function
-                        // check if it is not a number
-{
-    console.log ("not a num");
+const input = prompt("Enter age: ");
+
+if (input === "") 
+    {
+    console.log("No input entered");
 }
-else if (num<=0)
-{
-    console.log("error");
+else if (isNaN(input)) 
+    {
+    console.log("Not a number");
 }
-else if (num>=18)
-{
-    console.log("eligile");
-}
-else if (num<18)
-{
-    console.log("not eligible");
+else
+     {
+    let age = Number(input);
+
+    if (age < 0)
+         {
+        console.log("cannot be negative.");
+    }
+    else if (age >= 18)
+         {
+        console.log("Eligible");
+    }
+    else
+         {
+        console.log("Not eligible");
+    }
 }

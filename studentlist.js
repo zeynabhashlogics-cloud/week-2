@@ -1,5 +1,5 @@
 // student marks list using arrays
-const prompt = require("prompt-sync")();
+
 console.log("   students marks list ");
 
 let marks=[23,54,87,20,94,20,77]; //array for marks
@@ -12,7 +12,7 @@ function addmarks(marks,val) //adding elements function
 }
 
 addmarks(marks,40);
-console.log("added marks = "+marks);
+console.log("after adding = "+marks);
 
 function removemarks(marks, value) 
 {
@@ -27,7 +27,7 @@ function removemarks(marks, value)
 }
 
 removemarks(marks, 20);
-console.log("removed marks = "+marks);
+console.log("after removing = "+marks);
 
 function avgmarks(marks)
 {

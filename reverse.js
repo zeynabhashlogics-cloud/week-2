@@ -1,7 +1,12 @@
 //loops //reverse of string
 const prompt=require("prompt-sync")();
 let str =prompt("enter a sentence = ");
-
+if (str==="")
+{
+    console.log("no input");
+}
+else
+{
 function reverse(str) 
 {
     let rev = ""; // empty new string
@@ -13,3 +18,4 @@ function reverse(str)
 }
 
 console.log("reverse = "+ reverse(str));
+}

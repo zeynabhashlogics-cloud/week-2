@@ -1,5 +1,5 @@
 
-let tasks =  // array containing objects as tasks
+const tasks =  // array containing objects as tasks
 [
     //id
     //title
@@ -27,7 +27,7 @@ let tasks =  // array containing objects as tasks
 ]; 
 //find
 console.log("FIND");
-let t1=tasks.find(function(x)
+const t1=tasks.find(function(x)
 {
 return x.title==="cook dinner";
 });
@@ -44,13 +44,13 @@ function filtering(tasks)
     });
 }
 
-let t2 = filtering(tasks);
+const t2 = filtering(tasks);
 console.log(t2);
 
 
 //map
 console.log("MAP");
-let t3=tasks.map(function(y)
+const t3=tasks.map(function(y)
 {
     return y.id +3 ;
 });

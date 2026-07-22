@@ -3,7 +3,16 @@
 const prompt=require("prompt-sync")();
 let sentence =prompt("enter a sentence = ");
 let count =0;
-
+if (sentence  ==="")
+{
+    console.log("no input");
+}
+else if (Number(sentence))
+{
+    console.log("error");
+}
+else
+{
 console.log("vowels are = ");
 for (let i=0;i<sentence.length;i++)
 {
@@ -16,4 +25,5 @@ for (let i=0;i<sentence.length;i++)
     }
 }
 console.log("vowel count is = " + count);
+}
 

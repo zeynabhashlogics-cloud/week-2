@@ -1,9 +1,4 @@
 
-//task manager
-//id
-//title
-//status
-//priority
 let tasks=[ ];
 //empty array we make changes to this array using functions
 
